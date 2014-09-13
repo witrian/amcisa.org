@@ -1,18 +1,27 @@
 body {
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: 50;
   font-size: 20px;
-  width:90%;
+  width:100%;
   text-align: -webkit-center;
+  margin-top: 80px;
 }
 .btn {
   margin:3px;
 }
+.navbar{
+  position: fixed;
+  opacity: 0.98;
+  z-index: 100;
+}
+.navbar-default{
+  background-color: #ffffff;
+}
+.navbar-default .navbar-nav>li>a{
+  color:#000000;
+}
 .carousel{
-  width:90%;
+  width:100%;
   text-align: -webkit-center;
-  padding: 100px;
+  padding: 15%;
   background: darkseagreen;
 }
 .event-div{
