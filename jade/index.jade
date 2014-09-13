@@ -1,0 +1,57 @@
+extends ./layout.jade
+
+block title
+  title Home
+
+block content
+    h1 Recent events
+    .container-fluid
+      .col-md-3
+        img(src="http://placehold.it/300x200")
+      .col-md-9
+        h3 First event
+    .container-fluid
+      .col-md-9
+        h3 Second event
+      .col-md-3
+        img(src="http://placehold.it/300x200")      
+    .container-fluid
+      .col-md-3
+        img(src="http://placehold.it/300x200")
+      .col-md-9
+        h3 Third event
+    br
+    h1 Services
+    .container-fluid
+      .col-md-3
+        h3 Event Registration
+      .col-md-3 
+        h3 Course Guide
+      .col-md-3
+        h3 FAQ
+      .col-md-3
+        h3 Prospective Students
+
+//Custom Carousel 
+block carousel
+  #myCarousel.carousel
+    //Round page indicators
+    ol.carousel-indicators
+      li(data-target="#myCarousel",data-slide-to="0",class="active")
+      li(data-target="#myCarousel",data-slide-to="1")
+      li(data-target="#myCarousel",data-slide-to="2")
+    //Wrapper for inner slides
+    .carousel-inner
+      .item.active
+        h1 First Slide
+      .item
+        h1 Second Slide
+      .item
+        h1 Third Slide
+    //Buttons to slide right or left
+    a(class="carousel-control left" href="#myCarousel" data-slide="prev") 
+      span(class="glyphicon glyphicon-chevron-left")
+    a(class="carousel-control right" href="#myCarousel" data-slide="next")
+      span(class="glyphicon glyphicon-chevron-right")
+
+  

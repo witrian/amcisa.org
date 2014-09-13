@@ -1,0 +1,35 @@
+mixin navlink(name,link)
+  li: a(href=link)
+    h4=name
+
+doctype html5
+html(lang='en')
+  block title
+  body
+
+    link(href="http://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/cosmo/bootstrap.min.css", rel="stylesheet")
+    link(href="./css/custom.css", rel="stylesheet")
+
+    //Default navigation bar
+    .navbar
+      .navbar.navbar-default.navbar-fixed-top
+        .container
+          .navbar-header
+            ul.nav.navbar-nav
+              +navlink("Home","index.html")
+              +navlink("About Us","about.html")
+              +navlink("Events","events.html")
+              +navlink("Services","services.html")
+              +navlink("Contact Us","#")
+
+    //This is where our main content is inserted into.
+    block carousel
+    block content
+
+    .footer 
+      h5 Made in bootstrap
+
+    //Utility scripts
+    script(src="js/jquery-1.11.0.js")
+    script(src="js/bootstrap.min.js")
+

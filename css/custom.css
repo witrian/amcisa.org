@@ -1,0 +1,20 @@
+body {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 50;
+  font-size: 20px;
+  width:90%;
+  text-align: -webkit-center;
+}
+.btn {
+  margin:3px;
+}
+.carousel{
+  width:90%;
+  text-align: -webkit-center;
+  padding: 100px;
+  background: darkseagreen;
+}
+.event-div{
+  width:90%;
+}
