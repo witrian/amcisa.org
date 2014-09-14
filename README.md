@@ -22,3 +22,16 @@ Some know-how of how HTML/CSS/JS works is needed to work on the project.
 3. Make sure that you have bootstrap.css or bootstrap.min.css, bootstrap.js or bootstrap.min.js linked to your main jade file.
 4. Further customisation to the CSS themes is done in the custom.css. You can use the "inspect element" provided by the browser to do instant preview of the change.
 5. Please read through the [language reference for Jade](http://jade-lang.com/reference/) and the [Bootstrap](http://getbootstrap.com/javascript/) [reference](http://getbootstrap.com/css/) before you start so you know how to do modifications to the layout.
+
+###Localhost
+
+Server.py is a simple HTTP server written in Python that enables you to host the source page on your computer. Just double click it to load the page.
+
+###Google forms
+
+The web site will be using [Google Forms](https://support.google.com/docs/answer/87809?hl=en) for all data gathering needs. However, instead of linking it externally, the form would be embedded into our web pages, and the data would be sent to our central Google Drive. 
+
+For sending google form data into email, use the [sendFormByEmail](./js/Google Form/sendFormByEmail.js) script provided in the js/Google Form folder and copy paste it into your Google Form -> Tools -> Script Editor. Edit the email you want it to mail to, and change the id key of your form. As of 2014, the google doc url format is like so:
+
+https://docs.google.com/forms/d/__this is your key here__/edit
+
