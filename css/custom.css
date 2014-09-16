@@ -2,21 +2,19 @@ body {
   font-size: 20px;
   width:100%;
   text-align: -webkit-center;
-  margin-top: 70px;
+  margin-top: 50px;
+}
+.container-fluid{
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .btn {
   margin:3px;
 }
 .navbar{
   position: fixed;
-  opacity: 0.98;
+  opacity: 0.87;
   z-index: 100;
-}
-.navbar-default{
-  background-color: #ffffff;
-}
-.navbar-default .navbar-nav>li>a{
-  color:#000000;
 }
 .carousel{
   width:100%;
