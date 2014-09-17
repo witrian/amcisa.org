@@ -1,3 +1,24 @@
+//-
+  Currently only events within two years are linked here.
+  To update the page, just add the following block to the top.
+  //Left pic
+  a(href="YOUR LOCAL PATH TO THE WEBPAGE")
+    .container-fluid
+      .col-md-3
+        img(src="YOUR EVENT IMAGE HERE")
+      .col-md-9
+        h3 YOUR EVENT TITLE
+  //Right pic
+  a(href="YOUR LOCAL PATH TO THE WEBPAGE")
+    .container-fluid
+      .col-md-9
+        h3 YOUR EVENT TITLE    
+      .col-md-3
+        img(src="YOUR EVENT IMAGE HERE")
+      
+
+
+
 extends ./layout.jade
 
 block title
@@ -5,24 +26,28 @@ block title
 
 block content
   h1 All Events
-  - var description = true
-  .container-fluid
-    .col-md-3
-      img(src="http://placehold.it/300x200")
-    .col-md-9
-      h3 First event
-  .container-fluid
-    .col-md-9
-      h3 Second event
-    .col-md-3
-      img(src="http://placehold.it/300x200")
-  .container-fluid
-    .col-md-3
-      img(src="http://placehold.it/300x200")
-    .col-md-9
-      h3 Third event
-  .container-fluid
-    .col-md-9
-      h3 Fourth event
-    .col-md-3
-      img(src="http://placehold.it/300x200")
+  //- Insert update here. 
+  a(href="post.html")
+    .container-fluid
+      .col-md-3
+        img(src="http://placehold.it/300x200")
+      .col-md-9
+        h3 First event
+  a(href="post.html")
+    .container-fluid
+      .col-md-9
+        h3 Second event
+      .col-md-3
+        img(src="http://placehold.it/300x200")
+  a(href="post.html")
+    .container-fluid
+      .col-md-3
+        img(src="http://placehold.it/300x200")
+      .col-md-9
+        h3 Third event
+  a(href="post.html")
+    .container-fluid
+      .col-md-9
+        h3 Fourth event
+      .col-md-3
+        img(src="http://placehold.it/300x200")

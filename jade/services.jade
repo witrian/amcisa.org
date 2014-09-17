@@ -1,3 +1,6 @@
+//- 
+  Similar layout as events.jade.
+
 extends ./layout.jade
 
 block title
@@ -6,11 +9,12 @@ block title
 block content
   h1 All Services
   - var description = true
-  .container-fluid
-    .col-md-3
-      img(src="http://placehold.it/300x200")
-    .col-md-9
-      h3 Frequently Asked Questions
+  a(href="faq.html")
+    .container-fluid
+      .col-md-3
+        img(src="http://placehold.it/300x200")
+      .col-md-9
+        h3 Frequently Asked Questions
   .container-fluid
     .col-md-9
       h3 Event Registration
@@ -23,6 +27,6 @@ block content
       h3 Course Review
   .container-fluid
     .col-md-9
-      h3 Claims System
+      h3 Prospective students
     .col-md-3
       img(src="http://placehold.it/300x200")
