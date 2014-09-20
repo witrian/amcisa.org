@@ -1,6 +1,5 @@
 body {
   font-size: 20px;
-  width:100%;
   text-align: -webkit-center;
   margin-top: 50px;
 }
@@ -13,6 +12,35 @@ body {
 .btn {
   margin:3px;
 }
+.navbar{
+  position: fixed;
+  z-index: 100;
+  background: rgba(255,255,255,0.8);
+}
+.navbar-default .navbar-nav>li>a {
+  color: rgba(0,0,0,1);
+}
+.navbar-default .navbar-brand {
+  color: rgb(0,0,0);
+}
+.navbar-default .navbar-brand:hover {
+  color: rgb(255,255,255);
+  background: rgb(0,0,0);
+}
+.navbar-toggle{
+  background: rgb(0,0,0);
+}
+.navbar-toggle .icon-bar:hover{
+  background: rgba(255,255,255,0.84);
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+  background:rgba(0,0,0,0.7);
+}
+/*
+Height of image
+Carousel: 500px;
+logo : 300px;
+*/
 .carousel{
   width:100%; 
   text-align: -webkit-center;
