@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "NKSans Light";
+    src: url(fonts/NotoSansCJKsc-Light.ttf) format("truetype");
+}
 body {
   font-size: 18px;
   width:100%;
@@ -12,6 +16,10 @@ body {
 }
 .btn {
   margin:3px;
+}
+.box-sh{
+  width: 350px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.7);
 }
 .navbar-default{
   position: fixed;
