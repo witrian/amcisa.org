@@ -1,4 +1,4 @@
-body {
+.content {
   font-size: 20px;
   text-align: -webkit-center;
   margin-top: 50px;
@@ -13,6 +13,7 @@ body {
   margin:3px;
 }
 .navbar{
+  font-size: 18px;
   position: fixed;
   z-index: 100;
   background: rgba(255,255,255,0.8);
