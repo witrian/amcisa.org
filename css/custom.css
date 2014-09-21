@@ -18,7 +18,14 @@ body {
   margin:3px;
 }
 .box-sh{
-  box-shadow: 5px 5px 10px rgba(0,0,0,0.7);
+  max-width: 300px;
+  border: 2px solid black;
+}
+img{
+  width:100%;
+}
+.col-md-4{
+  padding-bottom: 5%;
 }
 .navbar-default{
   position: fixed;
