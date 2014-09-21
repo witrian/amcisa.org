@@ -1,12 +1,8 @@
-@font-face {
-    font-family: "NKSans Light";
-    src: url(fonts/NotoSansCJKsc-Light.ttf) format("truetype");
-}
 body {
   font-size: 18px;
   width:100%;
   text-align: -webkit-center;
-  margin-top: 50px;
+  margin-top:50px;
 }
 .container-fluid{
   padding-left: 0px;
@@ -17,15 +13,12 @@ body {
 .btn {
   margin:3px;
 }
+.box-sh>img{
+  width:100%;
+}
 .box-sh{
   max-width: 300px;
   border: 2px solid black;
-}
-img{
-  width:100%;
-}
-.col-md-4{
-  padding-bottom: 5%;
 }
 .navbar-default{
   position: fixed;
@@ -61,10 +54,22 @@ logo : 300px;
 */
 .carousel{
   width:100%; 
+  height: 100%;
+  overflow-y: hidden;
   text-align: -webkit-center;
 }
-.carousel-caption{
-  text-shadow: 0 1px 2px rgba(0,0,0,1);
+.carousel>img{
+  min-width: 100%;
+}
+.item h1{
+  float:left;
+  position: absolute;
+  width:100%;
+  text-align:center;
+  bottom:10em;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px #888888;
+
 }
 .post{
   padding-left: 5%;
