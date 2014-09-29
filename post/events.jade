@@ -1,24 +1,3 @@
-//-
-  Currently only events within two years are linked here.
-  To update the page, just add the following block to the top.
-  //Left pic
-  a(href="YOUR LOCAL PATH TO THE WEBPAGE")
-    .container-fluid
-      .col-md-3
-        img(src="YOUR EVENT IMAGE HERE")
-      .col-md-9
-        h3 YOUR EVENT TITLE
-  //Right pic
-  a(href="YOUR LOCAL PATH TO THE WEBPAGE")
-    .container-fluid
-      .col-md-9
-        h3 YOUR EVENT TITLE    
-      .col-md-3
-        img(src="YOUR EVENT IMAGE HERE")
-      
-
-
-
 extends ./layout.jade
 
 block title
@@ -27,15 +6,26 @@ block title
 block content
   h1 All Events
   //- Insert update here. 
-  div
+  .event-blk
     a(href="events/ntu.halloween.index.html")     
       .col-md-4
         .box-sh
-          img(src="http://placehold.it/300")
-        h2 NTU 感恩的季节
+          img(src="img/ntu.halloween.sweets.png")
+        h2 #NTU Halloween
+    a(href="http://goo.gl/PYBmFF")
+      .col-md-4
+        .box-sh
+          img(src="img/amc.talentnight.logo.png")
+        h2 #Amcisa Talent Night
     a(href="http://goo.gl/Z6U9lP")     
       .col-md-4
         .box-sh
           img(src="img/ntu.ganen.logo.png")
-        h2 NTU 感恩的季节
-          
+        h2 #NTU 感恩的季节
+  .event-blk
+    a(href="events/nus.telok.index.html")     
+      .col-md-4
+        .box-sh
+          img(src="img/nus.telok.logo.png")
+        h2 #NUS Telok Bangah Run
+        
