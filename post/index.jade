@@ -4,7 +4,7 @@ block title
   title Home
 
 block content
-    .panel.panel-default
+    .panel.panel-primary.section
       .panel-heading
         a(href="events.html")
           h1 Recent events
@@ -24,7 +24,7 @@ block content
             .box-sh
               img(src="img/amc.talentnight.logo.png")
             h2 #Amcisa Talent Night
-    .panel.panel-default
+    .panel.panel-info.section
       .panel-heading
         a(href="services.html")
           h1 Services
@@ -45,7 +45,7 @@ block content
 
 //Custom Carousel 
 block carousel
-  #myCarousel.carousel
+  #myCarousel.carousel.section
     //Round page indicators
     ol.carousel-indicators
       li(data-target="#myCarousel",data-slide-to="0",class="active")
@@ -68,4 +68,5 @@ block carousel
     a(class="carousel-control right" href="#myCarousel" data-slide="next")
       span(class="glyphicon glyphicon-chevron-right")
 
-  
+block script
+  script(src="js/main.js")
