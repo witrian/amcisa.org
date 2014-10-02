@@ -4,7 +4,8 @@
 
 mixin navlink(name,link,icon)
   li
-    a(href=link)=name
+    a(href=link)
+      = name
 
 doctype html5
 html
@@ -27,11 +28,13 @@ html
           span.icon-bar
           span.icon-bar
         a.navbar-brand(href="index.html") 
-          :markdown
-            ![](img/amc.header.logo.png)Amcisa
+          | Amcisa
 
       .navbar-collapse.collapse.navbar-responsive-collapse
-        ul.nav.navbar-nav
+        .nav.navbar-nav.navbar-left
+          a(href="index.html")
+            img(src="./img/amc.header.logo.full.png")
+        ul.nav.navbar-nav.navbar-right
           +navlink("Home","index.html")
           +navlink("About Us","about.html")
           +navlink("Events","events.html")
