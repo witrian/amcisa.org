@@ -4,7 +4,8 @@ Set to use section class.
 Author: Daniel Tan (02/10/14)
 */
 var main={
-  anchorArr:["section"]
+  anchorArr:["section"],
+  minWidth:992 //this is set in the css
 }
 
 $(window).load(function(){
@@ -14,22 +15,26 @@ $(window).load(function(){
   function scrollNext(e){
     var movement=e.originalEvent.wheelDelta-offset;
     movement= movement < 0 ? 1 : -1;
-    console.log(movement);
+    //console.log(movement);
     scroll=clamp(scroll+movement,0,anchor.length-1);
+    //console.log(anchor[scroll].attr('class'));
     scrollToElement(anchor[scroll]);
   }
-  //UGLY Hack to only use auto scroll 
-  //when height is right
-  var minheight=1900;
-  var curheight=$(window).height();
+
+  //only use auto scroll when width is right
+  var controlele="."+main.anchorArr.join(", .");
+  var minwidth=main.minWidth; 
+  //console.log(minwidth);
+  var curwidth=$(controlele).width();
   $(window).resize(function(){
-    curheight=$(window).height();
+    curwidth=$(controlele).width();
   })
+
   //No support for firefox 
   $('body').bind('mousewheel', function(e){
-    if (curheight<minheight){
+    if (curwidth>=minwidth){
       scrollNext(e);
-      console.log("No prob");
+      //console.log("No prob");
       return false;
     }
   });

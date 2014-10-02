@@ -1,6 +1,6 @@
 #Ignored Files
-img/originals
-
+/img/originals
+/data
 # Logs
 logs
 *.log
