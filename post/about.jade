@@ -1,3 +1,8 @@
+mixin line(array)
+  tr
+    -each thing in array
+      td=thing
+
 extends ./layout.jade
 
 block title
@@ -12,31 +17,51 @@ block content
     .panel-body
       img(src="http://placehold.it/500")
       table.table.table-striped.table-hover
-        thead
+        thead(style="background:rgb(255,0,57);color:white;")
           tr 
             th 职位
             th 名字
             th 电话
+            th 电邮
         tbody
-          tr
-            td Position
-            td Name
-            td Tel No
+          +line(["会长","萧征源","93795283",""])
+          +line(["副会长","李凯文","90597505",""])
+          +line(["文书","黄佳娴","90597505","JWONG039@e.ntu.edu.sg"])
+          +line(["财政","梁詠诗","91204520","YLIANG009@e.ntu.edu.sg"])
+          +line(["总务","蔡长智","83092816","CHAI0094@e.ntu.edu.sg"])
+          +line(["总务","邓奕靖","90962129","teng0103@e.ntu.edu.sg"])
+          +line(["编辑","陈晓瑜","83090945","chan0733@e.ntu.edu.sg"])
+          +line(["编辑","陈淑琪","86959985","TANS0337@e.ntu.edu.sg"])
+          +line(["节策","刘存全","83859431","lowc0032@e.ntu.edu.sg"])
+          +line(["节策","罗巧雯","83886548","QLOH004@e.ntu.edu.sg"])
+          +line(["节策","陈伟杰","96122718","TANW0222@e.ntu.edu.sg"])
+          +line(["网持","陈富浩","87163173","DANI0025@e.ntu.edu.sg"])
+          +line(["网持","张毅盛","91208690","YCHONG006@e.ntu.edu.sg"])
   .panel.panel-info
     .panel-heading
       h2 NUS Main Committee
     .panel-body
       img(src="http://placehold.it/500")
       table.table.table-striped.table-hover
-        thead
+        thead(style="background:rgb(255,117,24);color:white;")
           tr 
             th 职位
             th 名字
             th 电话
+            th 电邮
         tbody
-          tr
-            td Position
-            td Name
-            td Tel No
+          +line(["会长","萧征源","93795283",""])
+          +line(["副会长","李凯文","90597505",""])
+          +line(["文书","黄佳娴","90597505","JWONG039@e.ntu.edu.sg"])
+          +line(["财政","梁詠诗","91204520","YLIANG009@e.ntu.edu.sg"])
+          +line(["总务","蔡长智","83092816","CHAI0094@e.ntu.edu.sg"])
+          +line(["总务","邓奕靖","90962129","teng0103@e.ntu.edu.sg"])
+          +line(["编辑","陈晓瑜","83090945","chan0733@e.ntu.edu.sg"])
+          +line(["编辑","陈淑琪","86959985","TANS0337@e.ntu.edu.sg"])
+          +line(["节策","刘存全","83859431","lowc0032@e.ntu.edu.sg"])
+          +line(["节策","罗巧雯","83886548","QLOH004@e.ntu.edu.sg"])
+          +line(["节策","陈伟杰","96122718","TANW0222@e.ntu.edu.sg"])
+          +line(["网持","陈富浩","87163173","DANI0025@e.ntu.edu.sg"])
+          +line(["网持","张毅盛","91208690","YCHONG006@e.ntu.edu.sg"])
 
   
