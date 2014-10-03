@@ -28,6 +28,12 @@ img{
     padding-top: 10px;
   }
 }
+/*Hack for firefox/ 
+@media (min-height: 500px){
+  .panel{
+    height: 100%;
+  }
+}*/
 .panel-heading>a{
   color:white;
 }
@@ -46,12 +52,15 @@ img{
 .btn {
   margin:3px;
 }
+/*Hack for firefox and IE (No webkit, so padding and margin auto)*/
 .box-sh>img{
   width:100%;
+  padding: auto;
 }
 .box-sh{
   max-width: 300px;
   border: 2px solid black;
+  margin:auto;
 }
 .event-blk{
   padding-bottom: 30%;
@@ -88,7 +97,6 @@ img{
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
   background:rgba(0,0,0,0.7);
 }
-
 .carousel{
   width:100%; 
   max-height: 100%;
@@ -109,6 +117,9 @@ img{
   background: rgba(255,255,255,0.45);
   padding: 0.5em;
   text-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+}
+.item img{
+  margin: auto;
 }
 .post{
   padding-left: 5%;

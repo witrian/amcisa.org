@@ -13,8 +13,11 @@ $(window).load(function(){
   var anchor=findAnchor(main.anchorArr);
   var offset=0;
   function scrollNext(e){
-    var movement=e.originalEvent.wheelDelta-offset;
-    movement= movement < 0 ? 1 : -1;
+    if(e.originalEvent.wheelDelta){
+      movement=e.originalEvent.wheelDelta-offset <0 ? 1 : -1;
+    }else{
+      movement=e.originalEvent.deltaY-offset>0 ? 1 : -1;
+    }
     //console.log(movement);
     scroll=clamp(scroll+movement,0,anchor.length-1);
     //console.log(anchor[scroll].attr('class'));
@@ -31,7 +34,7 @@ $(window).load(function(){
   })
 
   //No support for firefox 
-  $('body').bind('mousewheel', function(e){
+  $('body').bind('wheel mousewheel', function(e){
     if (curwidth>=minwidth){
       scrollNext(e);
       //console.log("No prob");
