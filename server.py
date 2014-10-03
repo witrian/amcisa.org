@@ -25,7 +25,7 @@ def serve(port=8000,url=None):
       print("server running on port %s" % server_address[1])
       serverthread=Thread(target=httpd.serve_forever)
       serverthread.start()
-      webbrowser.open(url,new=2)
+      webbrowser.open(url,new=0)
 
 if __name__=="__main__":
    serve()
