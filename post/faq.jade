@@ -17,37 +17,45 @@ block title
 
 block content
   //All the questions come here
-  .panel.panel-primary
+  .panel.panel-primary.section
     .panel-heading
-      h3.panel-title 
-        | Prospecitve Students
+      .panel-title
+        h3 Student Pass & QET
     .panel-body
-      | Long text comes here
+      .question
+        include:markdown includes/student_pass_accom.md
 
-  .panel.panel-success
+  .panel.panel-info.section
     .panel-heading
-      h3.panel-title 
-        | Question Two
+      .panel-title
+        h3 Tuition Fee Loan (TFL) Part One
     .panel-body
-      | Long text comes here
+      .question
+        include:markdown includes/tuition_fee_loan_1.md
 
-  .panel.panel-warning
+  .panel.panel-info.section
     .panel-heading
-      h3.panel-title 
-        | Question Three
+      .panel-title
+        h3 Tuition Fee Loan (TFL) Part Two
     .panel-body
-      | Long text comes here
+      .question
+        include:markdown includes/tuition_fee_loan_2.md
 
-  .panel.panel-danger
+  .panel.panel-success.section
     .panel-heading
-      h3.panel-title 
-        | Question Four
+      .panel-title
+        h3 Medical Examination
     .panel-body
-      | Long text comes here
+      .question
+        include:markdown includes/medic_exam.md
 
-  .panel.panel-info
+  .panel.panel-warning.section
     .panel-heading
-      h3.panel-title 
-        | Question Five
+      .panel-title
+        h3 Back Account
     .panel-body
-      | Long text comes here
+      .question
+        include:markdown includes/bank_account.md
+
+block script
+  script(src="js/main.js")

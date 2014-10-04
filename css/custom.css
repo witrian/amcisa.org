@@ -20,6 +20,9 @@ img{
 .panel-body{
   text-align: -webkit-center;
 }
+.question{
+  text-align: left;
+}
 @media (min-width: 992px){
   .panel{
     min-height: 100%;
