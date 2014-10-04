@@ -1,5 +1,6 @@
 #Ignored Files
 /img/originals
+/__pycache__
 /data
 # Logs
 logs

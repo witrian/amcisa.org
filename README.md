@@ -37,6 +37,7 @@ Python - quick scripts are written in it to automate some tasks such as server h
 ###Python Scripts
 
 Server.py is a simple HTTP server written in Python that enables you to host the source page on your computer. Just double click it to load the page on the local server.
+
 Sentinel.py is a simple program that watches for file changes in the /posts directory and renders the pages again in the background. It also logs all events in the directory for reference. It is recommended to load this program up before starting development.
 
 ###Google API
