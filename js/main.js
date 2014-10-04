@@ -8,7 +8,7 @@ var main={
   minWidth:992 //this is set in the css
 }
 
-$(window).load(function(){
+$(document).ready(function(){
   var scroll =0;
   var anchor=findAnchor(main.anchorArr);
   var offset=0;
