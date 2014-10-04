@@ -6,12 +6,13 @@ Author: Daniel Tan (02/10/14)
 var main={
   anchorArr:["section"],
   minWidth:992 //this is set in the css
-}
+};
 
 $(document).ready(function(){
   var scroll =0;
   var anchor=findAnchor(main.anchorArr);
   var offset=0;
+  var movement;
   function scrollNext(e){
     if(e.originalEvent.wheelDelta){
       movement=e.originalEvent.wheelDelta-offset <0 ? 1 : -1;
@@ -31,7 +32,7 @@ $(document).ready(function(){
   var curwidth=$(controlele).width();
   $(window).resize(function(){
     curwidth=$(controlele).width();
-  })
+  });
 
   //No support for firefox 
   $('body').bind('wheel mousewheel', function(e){
@@ -46,9 +47,9 @@ function findAnchor(jumpToArr){
   //Support for multiple class anchor
   var dir=[];
   $("."+jumpToArr.join(", .")).
-    each(function(arg){
+    each(function(){
       dir.push($(this));
-    })
+    });
   return dir;
 }
 function scrollToElement(ele) {
