@@ -7,27 +7,22 @@ block title
   title Services
 
 block content
-  h1 All Services
-  - var description = true
-  a(href="faq.html")
-    .container-fluid
-      .col-md-3
-        img(src="http://placehold.it/300x200")
-      .col-md-9
-        h3 Frequently Asked Questions
-  .container-fluid
-    .col-md-9
-      h3 Prospective students
-    .col-md-3
-      img(src="http://placehold.it/300x200")  
-  .container-fluid
-    .col-md-3
-      img(src="http://placehold.it/300x200")
-    .col-md-9
-      h3 Course Review
-  .container-fluid
-    .col-md-9
-      h3 Event Registration
-    .col-md-3
-      img(src="http://placehold.it/300x200")
-  
+  .panel.panel-info.section
+    .panel-heading
+      h1 All Services
+    .panel-body
+      .container-fluid
+        a(href="faq.html")
+          .col-md-3
+            span.fa.fa-share-alt-square.ico-large(style="color:rgb(237, 119, 119)")
+            h3 Event Registration
+        .col-md-3 
+          span.fa.fa-cogs.ico-large(style="color:rgb(260, 222, 109)")
+          h3 Course Guide
+        .col-md-3
+          span.fa.fa-cogs.ico-large(style="color:rgb(188, 223, 138)")
+          h3 FAQ
+        .col-md-3
+          span.fa.fa-cogs.ico-large(style="color:rgb(148, 192, 204)")
+          h3 Prospective Students
+      
